@@ -1,0 +1,173 @@
+.modal-sort {
+  position: absolute;
+  width: 1004px;
+  height: 808px;
+  top: 45px;
+  left: 50%;
+  margin-left: -483px;
+  padding: 16px 27px 22px 18px;
+  border: 1px solid #8a8a8a;
+  background: #fff;
+  font-size: 12px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .modal-sort .modal-header {
+    margin-bottom: 10px; }
+    .modal-sort .modal-header .tit {
+      font-size: 14px;
+      color: #000;
+      margin: 0; }
+    .modal-sort .modal-header a {
+      text-decoration: none;
+      color: #a5a5a5; }
+      .modal-sort .modal-header a.close {
+        position: absolute;
+        right: 14px;
+        top: 8px;
+        font-size: 14px;
+        color: #444040;
+        font-weight: bold; }
+    .modal-sort .modal-header .btns {
+      margin-top: 10px;
+      overflow: hidden; }
+      .modal-sort .modal-header .btns .left-btns {
+        float: left;
+        overflow: hidden; }
+        .modal-sort .modal-header .btns .left-btns a {
+          padding: 8px 25px 8px 20px;
+          display: block;
+          float: left;
+          text-align: center;
+          color: #626265; }
+          .modal-sort .modal-header .btns .left-btns a.wish {
+            border-right: 1px solid #e3e3e3;
+            background: url(sort_default.png) no-repeat #f9f9f9;
+            background-position: 69px 50%; }
+          .modal-sort .modal-header .btns .left-btns a.sold {
+            background: url(sort_default.png) no-repeat #f9f9f9;
+            background-position: 45px 50%; }
+          .modal-sort .modal-header .btns .left-btns a.price {
+            margin-left: 10px;
+            background: url(sort_default.png) no-repeat #f9f9f9;
+            background-position: 45px 50%; }
+          .modal-sort .modal-header .btns .left-btns a.down {
+            background-image: url(p_s_down.jpg); }
+          .modal-sort .modal-header .btns .left-btns a.up {
+            background-image: url(p_s_up.png); }
+          .modal-sort .modal-header .btns .left-btns a.restore {
+            margin-left: 8px;
+            background-color: #fff; }
+        .modal-sort .modal-header .btns .left-btns span.tip {
+          line-height: 28px;
+          color: #A09E9E; }
+      .modal-sort .modal-header .btns .right-btns {
+        float: right;
+        overflow: hidden; }
+        .modal-sort .modal-header .btns .right-btns a {
+          display: block;
+          float: left;
+          width: 82px;
+          height: 26px;
+          text-align: center;
+          color: #626265;
+          border-radius: 5px;
+          border: 1px solid #757575;
+          line-height: 26px; }
+          .modal-sort .modal-header .btns .right-btns a.save {
+            color: #2F8E2C;
+            margin-right: 22px; }
+          .modal-sort .modal-header .btns .right-btns a.cancel {
+            color: #4C4C50; }
+  .modal-sort .modal-body {
+    position: relative;
+    width: 100%;
+    height: 738px;
+    padding: 4px 0 4px 12px;
+    border: 1px solid #cbcbcb;
+    overflow: auto;
+    overflow-x: hidden; }
+    .modal-sort .modal-body .modal-item,
+    .modal-sort .modal-body .modal-clone {
+      position: relative;
+      width: 215px;
+      height: 144px;
+      padding: 8px 12px 10px 12px;
+      margin: 18px 10px 0 0;
+      float: left;
+      border: 1px solid #ddd;
+      cursor: move; }
+      .modal-sort .modal-body .modal-item.moving,
+      .modal-sort .modal-body .modal-clone.moving {
+        background: #fffed5; }
+      .modal-sort .modal-body .modal-item.selected,
+      .modal-sort .modal-body .modal-clone.selected {
+        background: #E1E0E0; }
+      .modal-sort .modal-body .modal-item.target:before,
+      .modal-sort .modal-body .modal-clone.target:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 144px;
+        top: 8px;
+        left: -6px;
+        border: 1px solid #ED145B; }
+      .modal-sort .modal-body .modal-item p,
+      .modal-sort .modal-body .modal-clone p {
+        margin: 0 0 5px 0; }
+        .modal-sort .modal-body .modal-item p a,
+        .modal-sort .modal-body .modal-clone p a {
+          text-decoration: none; }
+          .modal-sort .modal-body .modal-item p a.item-id,
+          .modal-sort .modal-body .modal-clone p a.item-id {
+            color: #2884AB; }
+          .modal-sort .modal-body .modal-item p a.delete,
+          .modal-sort .modal-body .modal-clone p a.delete {
+            float: right;
+            color: #000; }
+            .modal-sort .modal-body .modal-item p a.delete:hover,
+            .modal-sort .modal-body .modal-clone p a.delete:hover {
+              color: #F0A62D; }
+      .modal-sort .modal-body .modal-item .item-pic,
+      .modal-sort .modal-body .modal-clone .item-pic {
+        float: left; }
+        .modal-sort .modal-body .modal-item .item-pic .w100,
+        .modal-sort .modal-body .modal-clone .item-pic .w100 {
+          width: 100px;
+          height: 100px; }
+      .modal-sort .modal-body .modal-item .item-detail,
+      .modal-sort .modal-body .modal-clone .item-detail {
+        float: left;
+        width: 100px;
+        margin-left: 10px; }
+        .modal-sort .modal-body .modal-item .item-detail p,
+        .modal-sort .modal-body .modal-clone .item-detail p {
+          margin: 0 0 3px 0; }
+          .modal-sort .modal-body .modal-item .item-detail p.pink,
+          .modal-sort .modal-body .modal-clone .item-detail p.pink {
+            color: #ed145b; }
+          .modal-sort .modal-body .modal-item .item-detail p.item-tit,
+          .modal-sort .modal-body .modal-clone .item-detail p.item-tit {
+            margin-bottom: 10px;
+            height: 42px;
+            overflow: hidden;
+            word-wrap: break-word;
+            word-break: normal;
+            text-overflow: ellipsis; }
+    .modal-sort .modal-body .insertLine {
+      position: relative;
+      width: 3px;
+      height: 144px;
+      background: red;
+      float: left; }
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: rgba(42, 40, 40, 0.71); }
+
+/*# sourceMappingURL=shelfSort.css.map */
